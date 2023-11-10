@@ -1,0 +1,42 @@
+div {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;  
+    font-size: small;
+}
+div.container {
+    height: 1080px;
+    background-color: slategray;
+}
+
+div.header {
+    height:20%;
+    background-color: rgb(100, 120, 160);
+    border: 3px inset black;
+}
+div[class="header_text"] {
+    height: 60%;
+    background-color: rgb(100, 130, 160);
+}
+div.main {
+    height: 50%;
+    background-color: rgb(68, 99, 130);
+    border: 3px dotted black;
+}
+div[class="main_text"]{
+    height: 81%;
+    background-color: rgb(70, 88, 125);
+}
+div.footer {
+    height: 19%;
+    background-color: rgb(88, 109, 150);
+    border: 3px outset rgb(31, 31, 97);
+}
+div[class="footer_text"] {
+    height: 59%;
+    background-color: rgb(88, 109, 160);
+}
+.main h4 {
+    font-size: large;
+    color: rgb(31, 31, 97);
+}

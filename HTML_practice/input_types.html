@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input types</title>
+    <style type="text/css">
+        table{
+            width:550px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="background-color: aliceblue;">
+        <legend><b>Input types</b></legend>
+        <h4>Color / number / range</h4>
+        <form>
+            <table>
+                <colgroup>
+                    <col width="20%">
+                    <col width="20%">
+                    <col width="20%">
+                </colgroup>
+                <tr>
+                    <td>Color</td>
+                    <td>Number</td>
+                    <td>Range</td>
+                </tr>
+                <tr>
+                    <td><input type="color"></td>
+                    <td><input type="number" min="0" max="100" step="10" value="20"></td>
+                    <td><input type="range" min="1" max="5" value="3"></td>
+                </tr>
+            </table>
+        </form>
+        <h4>Dates</h4>
+        <form>
+            <table>
+                <colgroup>
+                    <col width="34%">
+                    <col width="33%">
+                    <col width="33%">
+                </colgroup>
+                <tr>
+                    <td>Date (YYYY-MM-DD)</td>
+                    <td>Month (YYYY-MM)</td>
+                    <td>Week of year</td>
+                </tr>
+                <tr>
+                    <td><input type="date"></td>
+                    <td><input type="month"></td>
+                    <td><input type="week"></td>
+                </tr>
+            </table>
+        </form>
+        <h4>Times</h4>
+        <form>
+            <table>
+                <tr>
+                    <td>Time</td>
+                    <td>Datetime-local (Current time)</td>
+                </tr>
+                <tr>
+                    <td><input type="time"></td>
+                    <td><input type="datetime-local"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>

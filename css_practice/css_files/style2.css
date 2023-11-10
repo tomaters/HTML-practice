@@ -1,0 +1,67 @@
+div {
+    border: 1px solid black;
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+div.text1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 900;
+    background-color: aliceblue;
+    border: 5px inset purple;
+    background-color: gold;
+    filter: blur(3px);
+    
+}
+div.text2 {
+    text-align: right;
+    font-size: smaller;
+    font-style: oblique;
+    font-weight: 100;
+    border-right-color: aqua;
+    border-left-width: 5px;
+    background-color: lightblue;
+}
+div.text3 {
+    text-decoration: line-through;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 15px ridge cornflowerblue;
+}
+div.text4 {
+    text-indent: 30px;
+    font-family: cursive;
+    font-size: xx-large;
+    text-shadow: 5px 10px 1px rgba(0, 0, 0, 0.4); /* red, green, blue, alpha */
+    transition: text-shadow 50s;
+}
+div.text5 {
+    letter-spacing: 10px;
+    font-size: xx-small;
+    display: flex;
+    align-items: center;
+    transform: rotate(358deg);
+    transition: transform 15s;
+    border: 2px dashed lawngreen;
+}
+div.text6 {
+    line-height: 100px;
+    font-style: italic;
+    background-color: rgb(212, 212, 169);
+    transition: background-color 1s ease-in-out;
+    border: 15px groove peachpuff;
+}
+div.text7 {
+    overflow-y: scroll;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.7em;
+    border-style: hidden;
+    opacity: 0.3;
+}
+img {
+    float: left; /* allows words to be written to the side of the image */
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account</title>
+    <style type="text/css">
+        fieldset{
+            width:530px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return checkPasswordMatch()">
+        <fieldset style="background-color: aliceblue;">
+            <legend><b><i></i>Create an account</b></legend>
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input type="text" size=50 name="username" id="username" placeholder="Enter username (6-12 characters, only letters and numbers)" required
+                        pattern="[a-zA-Z0-9]{6,12}" autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" size=50 name="password" id="password" placeholder="Enter password (8-12 characters, must have letters and characters)"
+                        pattern="[a-zA-Z0-9]{8,12}">
+                    </td>
+                </tr>
+                <tr>
+                   <td>Re-enter password</td>
+                   <td>
+                        <input type="password" size=50 name="re_password" id="re_password" placeholder="Re-enter password">
+                   </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" size="50" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" checked="checked"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Birthday</td>
+                    <td><input type="date" size="50" name="birthday" id="birthday" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" size="70" placeholder="Verification (enter email)" required></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select name="country_code">
+                            <option value="+82">+82</option>
+                        </select>
+                        <input type="text" name="phone" size="50" required>
+                        <input type="button" name="verify" value="Send code">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" size=57 placeholder="Enter verification code" required>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="verify" value="Verify">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                        <input type="button" value="Return to login" onclick="window.location.href='login_screen.html'">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <script>
+        function checkPasswordMatch(){
+            var password=document.getElementById("password").value;
+            var rePassword=document.getElementById("re_password").value;
+            if(password !== rePassword){
+                alert("Passwords do not match. Please try again")
+                return false
+            }
+            return true;
+        }
+    </script>
+
+</body>
+</html>
