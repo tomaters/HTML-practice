@@ -1,0 +1,318 @@
+body {
+    background-color: rgb(252, 252, 252);
+}
+img.cat {
+    height: 120px;
+    width: 150px;
+    border-radius: 10px;
+}
+img.americano {
+    height: 120px;
+    width: 180px;
+    border-radius: 10px;
+}
+header {
+    padding: 10px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+.header-button {
+    padding: 10px;
+    top: 10px;
+}
+.header-button-left {
+    position: absolute;
+    left:10px;
+}
+.header-button-right {
+    position: absolute; 
+    right: 10px;
+}
+div.search{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+div.search_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(21, 202, 96);;
+    font-weight: 900;
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid rgb(21, 202, 96);;
+    border-radius: 30px;
+    padding: 10px;
+}
+div.search_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.menu_images {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+div.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: medium;
+    padding: 10px;
+}
+main {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3px;
+    width: 60%;
+}
+div[class*="advertisement"] {
+    font-size: 80px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    height: 110px;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+div.news_stand {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    height: 425px;
+    width: auto;
+}
+div.news_stand_line_1 {
+    color: rgb(77, 77, 77);
+    font-size: larger;
+}
+div.news_stand_line_2 {
+    background-color: rgb(232, 237, 240);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+}
+div.news_stand_articles_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    height: 270px;
+    padding:10px;
+    margin-top: 20px;
+}
+div.news_stand_article_1 {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+div.news_stand_article_2 {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+div.news_stand_article_3 {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+div.news_stand_article_4 {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+div[class*="caption"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+div.article_title {
+    font-weight: 900;
+}
+div.news_stand_line_4 {
+    text-align: center;
+}
+div.column2 {
+    margin-right: 3px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+div.shopping {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    height: 465px;
+    width: auto;
+}
+div.entertainment {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    height: 425px;
+    width: auto;
+}
+div.login_container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    width: auto;
+}
+div.login_line_1 {
+    text-align: center;
+}
+div.login_button {
+    border-radius: 3px;
+    background-color: rgb(21, 202, 96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    height: 50px;
+    margin: 10px;
+}
+div.login_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(102, 102, 102);
+    font-size: small;
+}
+div.advertisement_2 {
+    height: 200px;
+}
+div.weather {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    height: 230px;
+    width: auto;
+}
+
+
+div.stocks {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    height: 230px;
+    width: auto;
+}
+
+
+
+div.widgets {
+    background-color: rgb(240, 246, 247);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    height: 500px;
+    width: auto;
+}
+
+
+
+footer{
+    background-color: rgb(247, 247, 247);
+    font-size: normal;
+    padding-top: 5px;
+}
+div.footer_menu {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-left: 180px;
+    margin-right: 180px;
+    justify-content: space-between;
+}
+div[class*="other_links"] {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right:10px;
+    padding: 10px;
+}
+div.notices {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+div.footer_partners {
+    display: flex;
+    width: 1300px;
+    height: 110px;
+}
+div.creators_partners_developers {
+    display: relative;
+    width: 700px;
+}
+div.creators{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 140px;
+    padding: 5px;
+}
+div.partners { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 140px;
+    padding: 5px;
+}
+div.developers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 180px;
+    padding: 5px;
+}
+div.browser_flower {
+    display: relative;
+}
+div.footer_browser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    padding: 5px;
+}
+div.footer_flower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    padding: 5px;
+}
