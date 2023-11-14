@@ -6,15 +6,22 @@ img.cat {
     width: 150px;
     border-radius: 10px;
 }
+img.mouse {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+}
 img.americano {
     height: 120px;
     width: 180px;
     border-radius: 10px;
+    padding: 5px;
 }
 header {
     padding: 10px;
-    margin-right: 250px;
-    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header-button {
     padding: 10px;
@@ -23,23 +30,36 @@ header {
 .header-button-left {
     position: absolute;
     left:10px;
+    margin-left: 15%;
+    font-size: 30px;
+    color: rgb(21, 202, 96);;
 }
 .header-button-right {
     position: absolute; 
     right: 10px;
+    margin-right: 15%;
+    font-size: 30px;
+    color: rgb(21, 202, 96);;
+}
+input[type="text"] {
+    width: 700px;
+    height: 25px;
+    margin-bottom: 9px;
 }
 div.search{
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 38%;
+    margin: 35px;
 }
 div.search_bar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: rgb(21, 202, 96);;
+    color: rgb(21, 202, 96);
     font-weight: 900;
-    font-size: 35px;
+    font-size: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     border: 1px solid rgb(21, 202, 96);;
     border-radius: 30px;
@@ -49,6 +69,7 @@ div.search_menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding:5px;
 }
 div.menu_images {
     margin-top: 5px;
@@ -56,6 +77,13 @@ div.menu_images {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+    font-size: 25px;
+    color: rgb(99, 96, 96);
+}
+div[class*="menu_img"] {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
 }
 div.menu {
     display: flex;
@@ -76,6 +104,7 @@ div.column1 {
     justify-content: center;
     margin-right: 3px;
     width: 60%;
+    margin-left: 15%;
 }
 div[class*="advertisement"] {
     font-size: 80px;
@@ -102,7 +131,7 @@ div.news_stand_line_1 {
     color: rgb(77, 77, 77);
     font-size: larger;
 }
-div.news_stand_line_2 {
+div[class*="line_2"] {
     background-color: rgb(232, 237, 240);
     border-radius: 5px;
     display: flex;
@@ -150,14 +179,16 @@ div[class*="caption"] {
 div.article_title {
     font-weight: 900;
 }
-div.news_stand_line_4 {
+div[class*="footer_line"] {
     text-align: center;
+    font-size: large;
 }
 div.column2 {
     margin-right: 3px;
     display: flex;
     flex-direction: column;
     width: 40%;
+    margin-right: 15%;
 }
 div.shopping {
     background-color: white;
@@ -165,8 +196,64 @@ div.shopping {
     padding: 15px;
     margin: 5px;
     border: 1px solid lightgray;
-    height: 465px;
+    height: 530px;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.shopping_row_1 {
+    font-size: large;
+    margin-top: 10px;
+}
+div.shopping_main_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+div.shopping_images_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    margin-right: 3px;
+}
+div[class*="shopping_images_row"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+div.shopping_main_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 32%;
+    height: auto;
+    margin-bottom: 5px;
+}
+div.shopping_side_1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(232, 237, 240);
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    align-items:center;
+    height: 30%;
+}
+div.shopping_side_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(232, 237, 240);
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    height: 22%;
+}
+div.shopping_footer_line {
+    height: 10%;
 }
 div.entertainment {
     background-color: white;
@@ -174,8 +261,65 @@ div.entertainment {
     padding: 15px;
     margin: 5px;
     border: 1px solid lightgray;
-    height: 425px;
+    height: auto;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.entertainment_header {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+    padding-right: 260px;
+}
+div.entertainment_topics {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px;
+    width: 45%;
+}
+div.entertainment_subscribe_home {
+    display: flex;
+    align-items: center;
+}
+div[class*="e_top"] {
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+div.e_top1 {
+    background-color: rgb(58, 73, 209);
+    color: white;
+    font-weight: 900;
+}
+div[class*="entertainment_row"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+div[class*="entertainment_article"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div[class*="e_image"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div[class*="e_caption"] {
+    line-height: normal;
+}
+div[class*="e_author"] {
+    color: rgb(83, 83, 83);
+    display: flex;
+    flex-direction: row;
 }
 div.login_container {
     background-color: white;
@@ -217,9 +361,78 @@ div.weather {
     border: 1px solid lightgray;
     height: 230px;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
 }
-
-
+div.weather_menu {
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+div.weather_compare {
+    position: relative;
+    right: 140px;
+    border: 1px solid lightgray;
+    padding: 2px;
+    border-radius: 10px;
+    color: rgb(58, 58, 58);
+}
+div.weather_display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+div.current_weather {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.weather_icon_and_degree {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+div.current_details {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+div.low {
+    color: blue;
+}
+div.high {
+    color: red;
+}
+div.slash {
+    color:gray;
+    font-size: smaller;
+}
+div.dust {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+i[class="fa-solid fa-chart-line"] {
+    font-size: 150px;
+}
+div.today_weather {
+    position: relative;
+    width: 50%;
+    margin-left: 15px;
+    font-size: 20px;
+    left: 70px;
+}
 div.stocks {
     background-color: white;
     border-radius: 10px;
@@ -228,9 +441,20 @@ div.stocks {
     border: 1px solid lightgray;
     height: 230px;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-
+div.stocks_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.stocks_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 div.widgets {
     background-color: rgb(240, 246, 247);
@@ -253,8 +477,8 @@ div.footer_menu {
     display: flex;
     flex-direction: row;
     padding: 10px;
-    margin-left: 180px;
-    margin-right: 180px;
+    margin-left: 600px;
+    margin-right: 600px;
     justify-content: space-between;
 }
 div[class*="other_links"] {
@@ -264,40 +488,55 @@ div[class*="other_links"] {
     margin-right:10px;
     padding: 10px;
 }
+div[class*="other_desc"] {
+    width: 150px;
+    position:relative;
+    top: 15px;
+}
 div.notices {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
-div.footer_partners {
+div.footer_titles {
     display: flex;
-    width: 1300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+    margin-right: 70px;
     height: 110px;
 }
+div.footer_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
 div.creators_partners_developers {
-    display: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+}
+div[class*="description"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-right: 15px;
+}
+div[class*="des"] {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+div.cpd_container {
+    height: 110px;
     width: 700px;
-}
-div.creators{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    margin-right: 140px;
-    padding: 5px;
-}
-div.partners { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 140px;
-    padding: 5px;
-}
-div.developers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 180px;
-    padding: 5px;
 }
 div.browser_flower {
     display: relative;

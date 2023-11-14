@@ -1,0 +1,47 @@
+ul {
+    list-style-type: none; /* no numbers or symbols on list */
+    margin: 0; /* get rid of default margin and padding on list */
+    padding: 0;
+    overflow: hidden;  /* li is floated, so if ul is hidden, overflow clears the floats and contains them in the box */
+    background-color: rgb(53,94,169); 
+}
+li {
+    float: left; /* floats the list items to the left to enable navigation menu; makes the list horizontal */
+}
+li a, .dropbtn {
+    display: inline-block; /* turns elements in the .dropbtn into inline blocks. if it is a block, it can be given values like width and padding */
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #6799FF; /* upon hover on menu item, background changes color */
+}
+li.dropdown {
+    display: inline-block; /* turns dropdown elements into inline blocks, enabling certain types of value-giving*/
+}
+li a.active, a.active:hover { /* login menu is floated to the right (HTML) and given active color background*/
+    background-color: #6799FF;
+}
+.dropdown-content {
+    display: none; /* initially sets dropdown content as invisible */
+     position: absolute;  /* removes dropdown content from normal flow of document; it no longer affects size or layout of the containing */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    opacity: 0.8;
+    z-index: 1; /* sets order of dropdown content */
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
