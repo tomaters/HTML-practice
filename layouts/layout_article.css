@@ -1,0 +1,39 @@
+div.container {
+    height: 50vh;
+    width: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3%;
+}
+div.header {
+    height: 15%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.main {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+div[class*="main_"] {
+    padding: 2%;
+    border: 1px solid black;
+}
+div.main_article {
+    margin-right: 2%;
+    border: 1px solid black;
+    width: 80%;
+}
+div.footer {
+    height: 15%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
