@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded');
+#text{
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+    text-align: center;
+    font-size: 45px;
+}
+div.container {
+    height: 97vh;
+    width: 96vw;
+    margin: 1%;
+    border: 1px dashed gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Encode Sans Semi Expanded";
+}
+div.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 18%;
+}
+div[class*="header_"] {
+    padding: 1%;
+}
+div.header_title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 70%;
+    border: 1px dashed gray;
+    width: 85%;
+}
+div.header_menu {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+ul {
+    list-style-type: none; /* no numbers or symbols on list */
+    margin: 0; /* get rid of default margin and padding on list */
+    padding: 0;
+    overflow: hidden;  /* li is floated, so if ul is hidden, overflow clears the floats and contains them in the box */
+    width: 70%;
+    margin: 0;
+    border: 1px solid black;
+}
+li {
+    float: left; /* floats the list items to the left to enable navigation menu; makes the list horizontal */
+}
+li a, .dropbtn {
+    display: inline-block; /* turns elements in the .dropbtn into inline blocks. if it is a block, it can be given values like width and padding */
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #e2e2e2;
+    border-bottom: 5px solid rgb(90, 90, 134);
+    opacity: 0.9;
+}
+li.dropdown {
+    display: inline-block; /* turns dropdown elements into inline blocks, enabling certain types of value-giving*/
+}
+li a.active, a.active:hover { /* login menu is floated to the right (in HTML) and given active color background*/
+    border: 5px solid rgb(90, 90, 134);
+    border-radius: 15px;
+}
+.dropdown-content {
+    display: none; /* initially sets dropdown content as invisible */
+    position: absolute;  /* removes dropdown content from normal flow of document; it no longer affects size or layout of the containing */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    opacity: 0.8;
+    z-index: 1; /* sets order of dropdown content */
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+li.menu_left {
+    float: right;
+}
