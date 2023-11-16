@@ -5,67 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="./css_files/homepage.css">
+    <script src="https://kit.fontawesome.com/129ed5580c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="header_title">
-                title
+                <div class="header_logo">
+                    <div id="logo_font"><i class="fa-solid fa-igloo"></i></div>
+                    <div id="logo_font">Igloo Room</div>
+                </div>
+                <div class="right_login">
+                    <ul class="menu_left">
+                        <li>
+                            <a class="menu_left" href="#signup">Sign Up</a>
+                            <a class="menu_left" href="#login">Login</a>
+                        </li>
+                    </ul> 
+                </div>
             </div>
             <div class="header_menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#mail" class="dropbtn">Mail</a>
-                        <div class="dropdown-content">
-                            <a href="#">My mail</a>
-                            <a href="#">Send mail</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#cafe" class="dropbtn">Cafe</a>
-                        <div class="dropdown-content">
-                            <a href="#">Cafe home</a>
-                            <a href="#">Chatting</a>
-                            <a href="#">Notifications</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#blog" class="dropbtn">Blog</a>
-                        <div class="dropdown-content">
-                            <a href="#">View my blogs</a>
-                            <a href="#">Create a blog</a>
-                            <a href="#">Explore blogs</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#shopping" class="dropbtn">Shopping</a>
-                        <div class="dropdown-content">
-                            <a href="#">Home appliances</a>
-                            <a href="#">Clothes</a>
-                            <a href="#">Shoes</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#new" class="dropdtn">News</a>
-                        <div class="dropdown-content">
-                            <a href="#">Politics</a>
-                            <a href="#">Economics</a>
-                            <a href="#">Culture</a>
-                        </div>
-                    </li>
-                    <li class="menu_left">
-                        <a class="active" href="#signup">Sign Up</a>
-                        <a class="active" href="#login">Login</a>
-                    </li> 
+                <ul class="menu_bar">
+                    <div class="non_dropdown_menu_topics">
+                        <li>
+                            <a href="#reservation_and_icon">
+                                <div class="reservation_menu_icon">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div id="header_font">Reservations</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#location_and_icon">
+                                <div class="location_menu_icon">
+                                    <i class="fa-solid fa-location-pin"></i>
+                                </div>
+                                <div id="header_font">Locations</div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="dropdown_menu_topics">
+                        <li class="dropdown">
+                            <a href="#rewards" class="dropbtn" id="header_font">Rewards</a>
+                            <div class="dropdown-content">
+                                <a href="#">Events</a>
+                                <a href="#">Promotions</a>
+                                <a href="#">Benefits</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#about" class="dropdtn" id="header_font">About</a>
+                            <div class="dropdown-content">
+                                <a href="#">Overview</a>
+                                <a href="#">Igloo Room North Pole</a>
+                                <a href="#">Igloo Room South Pole</a>
+                                <a href="#">Igloo Room East Pole</a>
+                                <a href="#">Igloo Room West Pole</a>
+                            </div>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </div>
         <div class="main">
-
+            <div class="main_1">
+                <div class="main_1_picture">
+                    <img src="./images/main_igloo.jpg" alt="Main igloo image">
+                </div>
+                <div class="main_1_introduction">
+                    <p class="introduction" id="intro_font">
+                    Step into a realm of winter enchantment at our Igloo Room, where luxury meets nature beneath the northern lights. 
+                    <br><br> Discover the magic of our cozy, snow-covered retreat, offering an unforgettable escape into the heart of pristine landscapes. 
+                    <br><br> Embrace the warmth of our carefully crafted igloos for a serene and unique experience, promising moments that linger in the glow of frost-kissed memories.
+                    <br><br> Welcome to a world where every snowfall tells a story, and each night is painted with the dance of the auroras.    
+                    </p>
+                </div>
+            </div>
+            <div class="main_2">
+                <div class="main_2_left">
+                    <div class="main_2_left_pictures">
+                        <img src="./images/igloo_1.jpg" alt="Igloo 1">
+                        <p id="intro_font" style="color: #1e385b;">North Pole Igloo Room</p>
+                    </div>
+                    <div class="main_2_left_pictures">
+                        <img src="./images/igloo_2.jpg" alt="Igloo 2">
+                        <p id="intro_font" style="color: #1e385b;">South Pole Igloo Room</p>
+                    </div>
+                </div>
+                <div class="main_2_right">
+                    <div class="main_2_right_pictures">
+                        <img src="./images/igloo_3.jpg" alt="Igloo 3">
+                        <p id="intro_font" style="color: #1e385b;">East Pole Igloo Room</p>
+                    </div>
+                    <div class="main_2_right_pictures">
+                        <img src="./images/igloo_4.jpg" alt="Igloo 4">
+                        <p id="intro_font" style="color: #1e385b;">West Pole Igloo Room</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer">
-
+            <div class="notices">
+                <div><b>Announcement:</b> Visit the <em>Promotions</em> tab under <i>Rewards</i> and participate in our ongoing events!</div>
+            </div>
+            <div class="footer_main">
+                <div class="creators_partners_developers">
+                    <div class="footer_titles">
+                        <div>Creators</div>
+                    </div>
+                    <div class="cpd_container">    
+                        <div class="creators_description">
+                            <div class="des1">크리에이터</div>
+                            <div class="slash"> | </div>
+                            <div class="des2">스몰비즈니스</div>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+            <div class="footer_menu">
+                <div>
+                    회사소계
+                </div>
+                <div class="slash"> | </div>
+                <div>
+                    인재채용
+                </div>
+                <div class="slash"> | </div>
+                <div>
+                    제휴제안
+                </div>
+                <div class="slash"> | </div>
+                <div>
+                    이용약관
+                </div>
+                <div class="slash"> | </div>
+                <div>
+                <b>개인정보처리방침</b>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

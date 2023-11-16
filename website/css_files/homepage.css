@@ -1,25 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded');
-#text{
+@import url('https://fonts.googleapis.com/css?family=Della+Respira');
+@import url('https://fonts.googleapis.com/css?family=Della+Respira');
+#header_font{
     font-family: "Encode Sans Semi Expanded", sans-serif;
-    text-align: center;
-    font-size: 45px;
+    color: #122236;
+    text-shadow: rgb(0, 0, 0) .1px .1px .1px;
 }
+#logo_font{
+    font-family: "Della Respira", serif;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(3, 39, 74);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+#intro_font{
+    font-family: "Della Respira", serif;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(214, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.34) 0px 2px 5px;
+}
+/* IMAGES */
+img[src="./images/main_igloo.jpg"] {
+    height: 80%;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    padding: 1%;
+}
+img[src*="igloo_"] {
+    width: 450px;
+    height: 300px;
+    margin: 15px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+body {
+    background-color: #eff4f9;
+}
+/* CONTAINER */
 div.container {
     height: 97vh;
     width: 96vw;
     margin: 1%;
-    border: 1px dashed gray;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: "Encode Sans Semi Expanded";
+    background: linear-gradient(#eff4f9,#7ba1d2);
 }
+/* HEADER */
 div.header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 18%;
+    height: 20%;
 }
 div[class*="header_"] {
     padding: 1%;
@@ -30,55 +67,92 @@ div.header_title {
     flex-direction: row;
     align-items: center;
     height: 70%;
-    border: 1px dashed gray;
+    border-bottom: 1px solid #d1deef;
     width: 85%;
+}
+div.header_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 35px;
+    padding: 10px 15px;
+    background-color: #d7e2f1;
+    border: 1px solid #cbd9ed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+i[class*="igloo"] {
+    padding-right: 15px;
+    font-size: larger;
+    
+}
+a[href*="signup"] {
+    margin-right: 25px;
 }
 div.header_menu {
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-
+    margin-top: 15px;
 }
-ul {
-    list-style-type: none; /* no numbers or symbols on list */
-    margin: 0; /* get rid of default margin and padding on list */
+ul.menu_bar {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    overflow: hidden;  /* li is floated, so if ul is hidden, overflow clears the floats and contains them in the box */
+    overflow: hidden;
     width: 70%;
     margin: 0;
-    border: 1px solid black;
+    background-color: #cbd9ed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
-li {
-    float: left; /* floats the list items to the left to enable navigation menu; makes the list horizontal */
+div.non_dropdown_menu_topics {
+    display: flex;
+    flex-direction: row;
+}
+a[href*="and_icon"] {
+    display: flex;
+}
+div[class*="menu_icon"] {
+    margin-right: 10px;
+}
+ul.menu_left {
+    list-style-type: none;
 }
 li a, .dropbtn {
-    display: inline-block; /* turns elements in the .dropbtn into inline blocks. if it is a block, it can be given values like width and padding */
-    color: black;
+    display: inline-block;
+    color: #182d49;
     font-weight: 700;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #e2e2e2;
-    border-bottom: 5px solid rgb(90, 90, 134);
-    opacity: 0.9;
+    opacity: 0.8;
 }
 li.dropdown {
-    display: inline-block; /* turns dropdown elements into inline blocks, enabling certain types of value-giving*/
+    display: inline-block;
 }
-li a.active, a.active:hover { /* login menu is floated to the right (in HTML) and given active color background*/
-    border: 5px solid rgb(90, 90, 134);
-    border-radius: 15px;
+li a.menu_left {
+    border-top: 3px groove #c4d5eb;
+    border-left: 3px groove #c4d5eb;
+    background-color: #dde7f3;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #182d49;
 }
 .dropdown-content {
-    display: none; /* initially sets dropdown content as invisible */
-    position: absolute;  /* removes dropdown content from normal flow of document; it no longer affects size or layout of the containing */
-    background-color: #f9f9f9;
+    display: none;
+    position: absolute;
+    background-color: #d1deef;
     min-width: 160px;
     opacity: 0.8;
-    z-index: 1; /* sets order of dropdown content */
 }
 .dropdown-content a {
     color: black;
@@ -87,11 +161,161 @@ li a.active, a.active:hover { /* login menu is floated to the right (in HTML) an
     text-align: left;
 }
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #d1deef;
 }
 .dropdown:hover .dropdown-content {
     display: block;
 }
-li.menu_left {
-    float: right;
+/* MAIN */
+div.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 67%;
+    width: 70%;
+    margin-left: 15%;
+    border: 1px solid #d1deef;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    background: linear-gradient(#182d49,#a6bfe1);
+}
+div.main_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 100%;
+    border-bottom: 1px solid #d1deef;
+    background: linear-gradient(#182d49,#a6bfe1);
+}
+div.main_1_picture {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+div.main_1_introduction {
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    padding: 1%;
+}
+p.introduction {
+    color: eff4f9;
+    background-color: #203c61;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    padding: 2%;
+}
+div.main_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 100%;
+}
+div[class*="_pictures"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #cbd9ed;
+}
+/* FOOTER */
+div.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+    height: 10%;
+    width: 100%;
+    border-top: 1px solid #d1deef;
+    background: linear-gradient(#638fca,#335e98);
+}
+div.footer_menu {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+}
+div[class*="other_links"] {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right:10px;
+    padding: 10px;
+}
+div[class*="other_desc"] {
+    width: 150px;
+    position:relative;
+    top: 15px;
+}
+div.notices {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+div.footer_titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+    margin-right: 70px;
+    height: 110px;
+}
+div.footer_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+div.creators_partners_developers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+}
+div[class*="description"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-right: 15px;
+}
+div[class*="des"] {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+div.cpd_container {
+    height: 110px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.browser_flower {
+    display: relative;
+}
+div.footer_browser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    padding: 5px;
+}
+div.footer_flower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    padding: 5px;
 }
