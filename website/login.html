@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="./css_files/homepage.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css_files/login.css">
     <script src="https://kit.fontawesome.com/129ed5580c.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,7 +21,7 @@
                     <ul class="menu_left">
                         <li>
                             <a class="menu_left" href="./signup.html">Sign Up</a>
-                            <a class="menu_left" href="./login.html">Login</a>
+                            <a class="menu_left" href="" onclick="window.location.reload">Login</a>
                         </li>
                     </ul> 
                 </div>
@@ -70,53 +70,33 @@
             </div>
         </div>
         <div class="main">
-            <div class="main_1">
-                <div class="main_1_picture">
-                    <img src="./images/main_igloo.jpg" alt="Main igloo image">
-                </div>
-                <div class="main_1_introduction">
-                    <p class="introduction" id="intro_font">
-                    Step into a realm of winter enchantment at our Igloo Room, where luxury meets nature beneath the northern lights. 
-                    <br><br> Discover the magic of our cozy, snow-covered retreat, offering an unforgettable escape into the heart of pristine landscapes. 
-                    <br><br> Embrace the warmth of our carefully crafted igloos for a serene and unique experience, promising moments that linger in the glow of frost-kissed memories.
-                    <br><br> Welcome to a world where every snowfall tells a story, and each night is painted with the dance of the auroras.    
-                    </p>
-                </div>
+            <div class="main_title" id="title_font">Log in</div>
+            <div class="main_signup" id="text_font">
+                <form>
+                    <table class="table_id_pass">
+                        <tr>
+                            <td>Username</td>
+                            <td><input type="text" name="id" id="id" placeholder="Enter username" required></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="pass" id="re_pass" placeholder="Enter password" required></td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <table id="table_submit">
+                        <tr>
+                            <td><input type="submit" value="Log in"></td>
+                            <td><input type="reset" value="Create an account" onclick="window.location.href='signup.html'"></td>
+                            <td><input type="button" value="Return Home" onclick="window.location.href='homepage.html'"></td>
+                        </tr>
+                    </table>
+                </form>
             </div>
-            <div class="main_2">
-                <div class="main_2_left">
-                    <div class="main_2_left_pictures">
-                        <img src="./images/igloo_1.jpg" alt="Igloo 1">
-                        <p id="intro_font" style="color: #1e385b;">North Pole Igloo Room</p>
-                    </div>
-                    <div class="main_2_left_pictures">
-                        <img src="./images/igloo_2.jpg" alt="Igloo 2">
-                        <p id="intro_font" style="color: #1e385b;">South Pole Igloo Room</p>
-                    </div>
-                </div>
-                <div class="main_2_right">
-                    <div class="main_2_right_pictures">
-                        <img src="./images/igloo_3.jpg" alt="Igloo 3">
-                        <p id="intro_font" style="color: #1e385b;">East Pole Igloo Room</p>
-                    </div>
-                    <div class="main_2_right_pictures">
-                        <img src="./images/igloo_4.jpg" alt="Igloo 4">
-                        <p id="intro_font" style="color: #1e385b;">West Pole Igloo Room</p>
-                    </div>
-                </div>
-            </div>
+            <div class="main_footer"></div>
         </div>
         <div class="footer">
-            <div class="notices">
-                <div id="text_font"><b>Announcement:</b> Visit the <em>Promotions</em> tab under <i>Rewards</i> and participate in our ongoing events!</div>
-            </div>
-            <div class="footer_main">
-                <div class="footer_logo">
-                    <div id="logo_font"><i class="fa-solid fa-igloo"></i></div>
-                    <div id="logo_font">Igloo Room</div>
-                </div>
-                <div class="copyright" id="text_font">This page is not really copyrighted</div>
-            </div>
+            <div class="copyright" id="text_font">This page is not really copyrighted</div>
         </div>
     </div>
 </body>

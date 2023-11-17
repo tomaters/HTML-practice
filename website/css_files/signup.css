@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded');
 @import url('https://fonts.googleapis.com/css?family=Della+Respira');
-@import url('https://fonts.googleapis.com/css?family=Della+Respira');
 #header_font{
     font-family: "Encode Sans Semi Expanded", sans-serif;
     color: #122236;
@@ -14,18 +13,19 @@
     color: rgb(3, 39, 74);
     text-shadow: rgb(0, 0, 0) 2px 2px 2px;
 }
-#intro_font{
+#title_font{
     font-family: "Della Respira", serif;
     text-align: left;
-    font-size: 20px;
-    color: rgb(214, 255, 255);
+    font-size: 30px;
+    font-weight: 600;
+    color: #262d3b;
     text-shadow: rgba(0, 0, 0, 0.34) 0px 2px 5px;
 }
 #text_font{
     font-family: "Della Respira", serif;
     text-align: left;
     font-size: 20px;
-    color: #1f2530;
+    color: #2c3545;
 }
 /* IMAGES */
 img[src="./images/main_igloo.jpg"] {
@@ -35,13 +35,6 @@ img[src="./images/main_igloo.jpg"] {
     margin-bottom: 10%;
     margin-right: 5%;
     padding: 1%;
-}
-img[src*="igloo_"] {
-    width: 450px;
-    height: 300px;
-    margin: 15px;
-    float: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
 body {
     background-color: #eff4f9;
@@ -54,7 +47,7 @@ div.container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: linear-gradient(#eff4f9,#7ba1d2);
+    background: linear-gradient(#f2f4f7,#b7bfd0);
 }
 /* HEADER */
 div.header {
@@ -81,6 +74,7 @@ div.header_logo {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 35px;
     padding: 10px 15px;
     background-color: #d7e2f1;
     border: 1px solid #cbd9ed;
@@ -174,102 +168,65 @@ li a.menu_left {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-/* MAIN */
 div.main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 67%;
-    width: 70%;
-    margin-left: 15%;
-    border: 1px solid #d1deef;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    overflow: auto;
-    background: linear-gradient(#182d49,#a6bfe1);
-}
-div.main_1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 2%;
-    padding-left: 2%;
-    width: 100%;
-    border-bottom: 1px solid #d1deef;
-    background: linear-gradient(#182d49,#a6bfe1);
-}
-div.main_1_picture {
-    display: flex;
     justify-content: center;
+    height: 61%;
     width: 90%;
-}
-div.main_1_introduction {
-    width: 50%;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    margin-right: 5%;
+    position: relative;
+    left: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    background: #acb7ca;
     padding: 1%;
 }
-p.introduction {
-    color: eff4f9;
-    background-color: #203c61;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-    padding: 2%;
-}
-div.main_2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-right: 2%;
-    padding-left: 2%;
-    width: 100%;
-}
-div[class*="_pictures"] {
+div.main_signup {
+    height: 90%;
+    width: 85%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
+}
+table[class*="table_"] {
     margin-top: 2%;
     margin-bottom: 2%;
-    background-color: #cbd9ed;
+    width: 100%;
 }
-/* FOOTER */
+table#table_submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+hr {
+    margin-right: 1%;
+    margin-left: 1%;
+    color: #3c485e;
+}
+div.main_title {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="tel"] {
+    width: 450px;
+    height: 20px;
+    margin-right: 3%;
+}
+input[name="name"], input[name="gender"], input[name="birthday"] {
+    margin-left: 18%;
+}
+input[id="email"], input[id="phone"], input[type="tel"] {
+    margin-left: 10%;
+}
 div.footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    margin-top: 1%;
-    height: 13%;
-    width: 100%;
-    border-top: 1px solid #d1deef;
-    background: #5d7faa;
-}
-div.notices {
-    display: flex;
-    padding: 15px;
-}
-div.footer_main {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 85%;
-}
-div.footer_logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    background-color: #d7e2f1;
-    border: 1px solid #cbd9ed;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    width: 15%;
-    margin-bottom: 1%;
+    height: 5%;
+    width: 95%;
 }
 div.copyright {
-    margin-bottom: 1%;
+    position: absolute;
+    right: 10%;
 }

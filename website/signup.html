@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css_files/signup.css">
+    <script src="https://kit.fontawesome.com/129ed5580c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header_title">
+                <div class="header_logo">
+                    <a class="menu_logo" href="./homepage.html">
+                        <div id="logo_font"><i class="fa-solid fa-igloo"></i></div>
+                        <div id="logo_font">Igloo Room</div>
+                    </a>
+                </div>
+                <div class="right_login">
+                    <ul class="menu_left">
+                        <li>
+                            <!-- i dont know why it moved when i didnt touch anything to my knowledge -->
+                            <a class="menu_left" href="" onclick="window.location.reload">Sign Up</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            
+                            <a class="menu_left" href="./login.html">Login</a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="header_menu">
+                <ul class="menu_bar">
+                    <div class="non_dropdown_menu_topics">
+                        <li>
+                            <a href="#reservation_and_icon">
+                                <div class="reservation_menu_icon">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div id="header_font">Reservations</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#location_and_icon">
+                                <div class="location_menu_icon">
+                                    <i class="fa-solid fa-location-pin"></i>
+                                </div>
+                                <div id="header_font">Locations</div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="dropdown_menu_topics">
+                        <li class="dropdown">
+                            <a href="#rewards" class="dropbtn" id="header_font">Rewards</a>
+                            <div class="dropdown-content">
+                                <a href="#">Events</a>
+                                <a href="#">Promotions</a>
+                                <a href="#">Benefits</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#about" class="dropdtn" id="header_font">About</a>
+                            <div class="dropdown-content">
+                                <a href="#">Overview</a>
+                                <a href="#">Igloo Room North Pole</a>
+                                <a href="#">Igloo Room South Pole</a>
+                                <a href="#">Igloo Room East Pole</a>
+                                <a href="#">Igloo Room West Pole</a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_title" id="title_font">Create an account</div>
+            <div class="main_signup" id="text_font">
+                <form>
+                    <table class="table_id_pass">
+                        <tr>
+                            <td>Username</td>
+                            <td><input type="text" name="id" id="id" placeholder="Enter username" required></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="pass" id="re_pass" placeholder="Enter password" required></td>
+                        </tr>
+                        <tr>
+                            <td>Enter password again</td>
+                            <td><input type="password" name="re_pass" id="re_pass" placeholder="Re-enter password"></td>
+                        </tr>
+                        <tr>
+                    </table>
+                    <hr>
+                    <table class="table_user_info">
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name" id="name"></td>
+                        </tr>
+                        <tr>
+                            <td class="gender">Gender</td>
+                            <td>
+                                <div class="gender_options">
+                                    <input type="radio" name="gender" value="male">Male &nbsp
+                                    <input type="radio" name="gender" value="female">Female
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Birthday</td>
+                            <td><input type="date" name="birthday"></td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <table class="table_verification_details">
+                        <tr>
+                            <td>Email</td>
+                            <td>
+                                <input type="text" id="email" name="email" placeholder="Enter email">
+                                <input type="button" value="Send code">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+                                <input type="button" value="Send code">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Verification code</td>
+                            <td>
+                                <input type="tel">
+                                <input type="button" id="verification" name="verification" value="Verify code">
+                            </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <table id="table_submit">
+                        <tr>
+                            <td><input type="submit" value="Submit"></td>
+                            <td><input type="button" value="Log in" onclick="window.location.href='login.html'"></td>
+                            <td><input type="button" value="Return Home" onclick="window.location.href='homepage.html'"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="main_footer"></div>
+        </div>
+        <div class="footer">
+            <div class="copyright" id="text_font">This page is not really copyrighted</div>
+        </div>
+    </div>
+</body>
+</html>
