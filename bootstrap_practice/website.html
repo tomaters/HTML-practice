@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap: Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap: Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>    
+    <title>Website</title>
+</head>
+<body>
+    <div class="container m-auto">
+        <header class="w-100 bg-primary text-white">
+        <nav class="navbar navbar-expand-sm sticky-top">
+            <ul class="navbar-nav navbar-dark align-items-center d-sm-flex justify-content-between">
+                <li class="logo p-4">
+                    <a class="h2 m-5 text-decoration-none" href="#">Title</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" id="nav-dropdown1" role="button" data-bs-toggle="dropdown" href="#">Dropdown 1</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"></a>Link 1</li>
+                        <li><a class="dropdown-item" href="#"></a>Link 2</li>
+                        <li><a class="dropdown-item" href="#"></a>Link 3</li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" id="nav-dropdown2" role="button" data-bs-toggle="dropdown" href="#">Dropdown 2</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"></a>Link 1</li>
+                        <li><a class="dropdown-item" href="#"></a>Link 2</li>
+                        <li><a class="dropdown-item" href="#"></a>Link 3</li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" id="nav-dropdown3" role="button" data-bs-toggle="dropdown" href="#">Dropdown 3</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"></a>Link 1</li>
+                        <li><a class="dropdown-item" href="#"></a>Link 2</li>
+                        <li><a class="dropdown-item" href="#"></a>Link 3</li>
+                    </ul>
+                </li>
+            </ul>
+         </nav>
+        </header>
+        <div id="contents" class="row">
+            <div id="slideshow">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-target="#myCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-target="#myCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/01.jpg" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/02.jpg" alt="Chicago" class="d-block w-100">
+                        </div>
+                    <div class="carousel-item">
+                        <img src="../images/03.jpg" alt="New York" class="d-block w-100">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="tab_menu">
+                    <ul class="nav nav-tabs" id="my-tab">
+                        <li class="nav-item">
+                        <a class="nav-link active" id="tab1" href="#content1" data-bs-toggle="tab">Tab 1</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="tab2" href="#content2" data-bs-toggle="tab">Tab 2</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-2">
+                        <div class="tab-pane fade show active" id="content1">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet, ipsum eu posuere suscipit,
+                                augue metus fermentum massa, at hendrerit tortor lectus sit amet justo. Nullam at semper ex. Sed
+                                consectetur fringilla lectus, vel scelerisque lectus gravida et. Nullam tincidunt purus vel erat
+                                euismod, in dignissim libero tempor. Vivamus ac eros ac magna blandit cursus. Aenean luctus, lacus
+                                et varius dapibus, risus metus fermentum augue, nec efficitur purus tellus et ligula.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-content mt-2">
+                        <div class="tab-pane fade show active" id="content2">
+                            <p>
+                                Proin sit amet leo sed enim ullamcorper feugiat. Suspendisse potenti. Vivamus auctor neque vitae
+                                justo congue bibendum. Nulla facilisi. Aliquam non tortor non tortor dictum pharetra. Sed
+                                venenatis urna eget aliquam ultricies. Integer ac turpis vitae quam vestibulum mattis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="links d-flex flex-row align-items-center">
+                    <figure class = "figure">
+                    <img src="../images/bok-choi.jpg" class="rounded-circle m-3" style="width: 170px; height: 170px;" alt="food">
+                        <figcaption class="figure-caption">Bok-choi</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../images/tomato.jpg" class="rounded-circle m-3" style="width: 170px; height: 170px;" alt="tomato">
+                        <figcaption class="figure-caption">Tomato</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-5">
+            <div class="footer_container">
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <ul class="list-unstyled d-flex flex-row justify-content-between text-dark">
+                            <li>Site information</li>
+                            <li> | </li>
+                            <li>Site information</li>
+                            <li> | </li>
+                            <li>Site information</li>
+                            <li> | </li>
+                            <li>Site information</li>
+                        </ul>
+                        <p class="text-secondary">Address that takes up an entire line</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <img src="../images/logo.gif" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
