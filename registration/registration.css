@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Fasthand');
+body {
+    background-color: #d2cd98;
+}
+#logo_text, #registration_title{
+    font-family: Fasthand;
+    text-align: center;
+    font-size: 28px;
+    color: #838067;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+input[type="text"], input[type="password"], #month, #day, #country_code {
+    height: 40px;
+    border-radius: 10px;
+    border: 3px solid #7e7945;
+    background-color: #d2cd98;
+    padding-left: 10px;
+}
+div[id*="enter_"] {
+    margin-left: 5%;
+}
+#logo {
+    color: #413f34;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-shadow: #413f34 1px 1px 1px;
+    margin-right: 20px;
+}
+#header {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items:last baseline;
+}
+#main {
+    border: 3px solid #a19c6b;
+    border-radius: 10px;
+    background-color: #8c8857;
+    color: #172e0f;
+    font-weight: 900;
+    overflow: auto;
+    font-family:'Courier New', Courier, monospace;
+}
+#registration_title {
+    text-align: center;
+    color: #383629;
+    padding-bottom: 10px;
+}
+#registration_title, #name, #username, #repassword, #re_password {
+    border-bottom: 1px solid #757248;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#password {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+td {
+    padding: 10px;
+}
+tr {
+    height: 75px;
+}
+.error {
+    text-align: right;
+    margin-right: 5%;
+    font-weight: 900;
+    color: #811c1c;
+}
+.success {
+    text-align: right;
+    margin-right: 5%;
+    font-weight: 900;
+    color: #274e19;
+}
+div[class*="_tip"]{
+    text-align: right;
+    margin-right: 5%;
+    font-weight: 900;
+    color: #172e0f;
+}
+#birthday_gender, #phone_num {
+    width: 100%;
+    border-bottom: 1px solid #757248;
+}
+#birthday_row, #gender_row, #phone_row {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#month, #day, #year {
+    width: 100%;
+    font-size: 14px;
+}
+#month_input, #day_input, #year_input {
+    width: 20%;
+    min-width: 157px;
+}
+#bday_error, #gender_error {
+    width: 100%;
+}
+#birthday_row, #gender_row, #phone_row {
+    margin-left: 3%;
+}
+#gender_options {
+    width: 30%;
+    min-width: 200px;
+}
+#gender_notice, #phone_notice {
+    width: 60%;
+}
+#phone {
+    width: 70%;
+    min-width: 200px;
+}
+#phone_info {
+   white-space: nowrap; 
+}
+#submit {
+    font-weight: 900;
+    font-size: 20px;
+    color: #413f34;
+    background-color: #a19c6b;
+    border: 1px solid #a19c6b27;
+    border-radius: 10px;
+}
