@@ -1,7 +1,3 @@
-function focusGreen(id) {
-    document.getElementById(id).style = "border: 3px solid green";
-}
-
 function submitForm() {
     let submitForm = document.registration;
     let flag = true;
@@ -39,6 +35,7 @@ function idCheck() {
 
     if(requirements.test(check.username.value)) {
         usernameErrorMsg.innerHTML = "That username is available!";
+        document.getElementById('username').style.border = "3px solid #274e19";
         usernameErrorMsg.className = 'success';
         return true;
     }
@@ -49,6 +46,7 @@ function idCheck() {
         usernameErrorMsg.innerHTML = 'Your username must start with a letter and be between 7-12 characters';
     }
     usernameErrorMsg.className = 'error';
+    document.getElementById('username').style.border = "3px solid #811c1c";
     return false;
 }
 
@@ -62,6 +60,7 @@ function nameCheck() {
 
     if(requirements.test(check.name.value)) {
         nameErrorMsg.innerHTML = 'That seems like a valid name...';
+        document.getElementById('name').style.border = "3px solid #274e19";
         nameErrorMsg.className = 'success';
         return true;
     }
@@ -72,6 +71,7 @@ function nameCheck() {
         nameErrorMsg.innerHTML = 'Your name is invalid';
     }
     nameErrorMsg.className = 'error';
+    document.getElementById('name').style.border = "3px solid #811c1c";
     return false;
 }
 
@@ -86,6 +86,7 @@ function passwordCheck() {
     if(requirements.test(check.password.value)) {
         passwordErrorMsg.innerHTML = 'That password is valid';
         passwordErrorMsg.className = 'success';
+        document.getElementById('password').style.border = "3px solid #274e19";
         return true;
     }
     if(check.password.value === '') {
@@ -95,6 +96,7 @@ function passwordCheck() {
         passwordErrorMsg.innerHTML = '6-25 characters containing at least one digit and letter';
     }
     passwordErrorMsg.className = 'error';
+    document.getElementById('password').style.border = "3px solid #811c1c";
     return false;
 }
 
@@ -107,15 +109,18 @@ function rePasswordCheck() {
     if(check.re_password.value === '') {
         rePasswordErrorMsg.className = 'error';
         rePasswordErrorMsg.innerHTML = 'Re-enter password';
+        document.getElementById('re_password').style.border = "3px solid #811c1c";
         return false;
     }
     if(check.password.value != check.re_password.value){
         rePasswordErrorMsg.innerHTML = 'Passwords do not match';
         rePasswordErrorMsg.className = 'error';
+        document.getElementById('re_password').style.border = "3px solid #811c1c";
         return false;
     }
     rePasswordErrorMsg.className = 'success'
     rePasswordErrorMsg.innerHTML = 'Password matches'
+    document.getElementById('re_password').style.border = "3px solid #274e19";
     return true;
 }
 
@@ -127,6 +132,7 @@ function monthCheck() {
 
     let monthRequirements = /^(January|February|March|April|May|June|July|August|September|October|November|December)$/; 
     if(monthRequirements.test(check.month.value)) {
+        document.getElementById('month').style.border = "3px solid #274e19";
         birthdayErrorMsg.className = 'success';
         return true;
     }
@@ -137,6 +143,7 @@ function monthCheck() {
         birthdayErrorMsg.innerHTML = 'Invalid month';
     }
     birthdayErrorMsg.className = 'error';
+    document.getElementById('month').style.border = "3px solid #811c1c";
     return false;
 }
 
@@ -148,6 +155,7 @@ function dayCheck() {
 
     let dayRequirements = /^(?:[1-9]|1\d|2[0-9]|3[0-1])$/;
     if(dayRequirements.test(check.day.value)) {
+        document.getElementById('day').style.border = "3px solid #274e19";
         birthdayErrorMsg.className = 'success';
         return true;
     }
@@ -158,6 +166,7 @@ function dayCheck() {
         birthdayErrorMsg.innerHTML = 'Invalid day';
     }
     birthdayErrorMsg.className = 'error';
+    document.getElementById('day').style.border = "3px solid #811c1c";
     return false;
 }
 
@@ -170,6 +179,7 @@ function yearCheck() {
     let yearRequirements = /^(19[0-9][0-9]|20[0-1][0-9]|202[0-3])$/;
     if(yearRequirements.test(check.year.value)) {
         birthdayErrorMsg.className = 'success';
+        document.getElementById('year').style.border = "3px solid #274e19";
         return true;
     }
     if(check.year.value === '') {
@@ -178,6 +188,7 @@ function yearCheck() {
     else {
         birthdayErrorMsg.innerHTML = 'Invalid year';
     }
+    document.getElementById('year').style.border = "3px solid #811c1c";
     birthdayErrorMsg.className = 'error';
     return false;
 }
@@ -194,8 +205,10 @@ function phoneCheck() {
     let requirements = /^([0-9]{8})$/;
     if(requirements.test(check.phone.value)) {
         phoneErrorMsg.className = 'success';
+        document.getElementById('phone').style.border = "3px solid #274e19";
         return true;
     }
+    document.getElementById('phone').style.border = "3px solid #811c1c";
     phoneErrorMsg.className = 'error';
     phoneErrorMsg.innerHTML = 'Invalid phone number';
     return false;

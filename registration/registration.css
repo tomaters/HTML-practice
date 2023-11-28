@@ -130,3 +130,6 @@ div[class*="_tip"]{
     border: 1px solid #a19c6b27;
     border-radius: 10px;
 }
+#submit:hover {
+    background-color: #a8a373;
+}
